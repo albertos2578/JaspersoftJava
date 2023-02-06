@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fillWidth="false" maxHeight="226.0" maxWidth="594.0" minHeight="226.0" minWidth="594.0" prefHeight="226.0" prefWidth="594.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.JasperComandas.PrimaryController">
+   <children>
+      <Label text="Elija el informe que desea mostrar">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Label>
+      <Pane prefHeight="123.0" prefWidth="575.0">
+         <children>
+            <Button fx:id="CartaHoy" layoutX="41.0" layoutY="54.0" onAction="#CartaHoy" prefHeight="34.0" prefWidth="125.0" text="Carta de hoy" />
+            <Button fx:id="todosPedidos" layoutX="203.0" layoutY="54.0" onAction="#InformeTodosPedidos" prefHeight="34.0" prefWidth="140.0" text="Todos los pedidos" />
+            <Button fx:id="pedidosHoy" layoutX="378.0" layoutY="54.0" onAction="#InformePedidosDefechaAFecha" prefHeight="34.0" prefWidth="156.0" text="Pedidos de fecha a fecha" />
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
